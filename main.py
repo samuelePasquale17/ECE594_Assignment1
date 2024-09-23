@@ -40,6 +40,9 @@ plt.gca().spines['right'].set_visible(False)  # Hide the right spine
 plt.gca().spines['left'].set_position('zero')  # Position the left spine at zero
 plt.gca().spines['bottom'].set_position('zero')  # Position the bottom spine at zero
 
+# Remove the Y-axis tick labels
+plt.gca().set_yticklabels([])
+
 # Display the grid with dashed lines and partial transparency
 plt.grid(True, linestyle='--', alpha=0.7)
 
